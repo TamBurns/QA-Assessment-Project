@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  pong_db:
+    image: mysql:latest    
+    container_name: pong_db
+
+    environment:
+      MYSQL_DATABASE: pong_db
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - pong_db_data:/var/lib/mysql
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+
+    environment:
+      PMA_HOST: pong_db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+
+    ports:
+      - 2200:80
+
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - ./webapp/:/usr/webapp
+
+    ports:
+      - 5000:5000
+
+
+volumes:
+  pong_db_data:
+  
+
