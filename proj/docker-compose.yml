@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  pong_db:
+  panda_db:
     image: mysql:latest    
-    container_name: pong_db
+    container_name: panda_db
 
     environment:
-      MYSQL_DATABASE: pong_db
+      MYSQL_DATABASE: panda_db
       MYSQL_ROOT_PASSWORD: password
       MYSQL_USER: user
       MYSQL_PASSWORD: password
@@ -15,14 +15,14 @@ services:
       - "3306:3306"
 
     volumes:
-      - pong_db_data:/var/lib/mysql
+      - pandadata:/var/lib/mysql
 
-  pma:
+  panda_pma:
     image: phpmyadmin/phpmyadmin
-    container_name: pma
+    container_name: panda_pma
 
     environment:
-      PMA_HOST: pong_db
+      PMA_HOST: panda_db
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
 
@@ -42,6 +42,6 @@ services:
 
 
 volumes:
-  pong_db_data:
+  pandadata:
   
 
