@@ -32,7 +32,7 @@ UNIT TESTING
 Test each component part separately to the whole of the application.
 
 Manual Testing:
-1. Checked that Flask application worked by running app.py outside of Docker.
+1. Checked that basic Flask application worked by running app.py outside of Docker.
     - Application was unable to connect.
     - Checked port was clear.
     - Application unable to connect.
@@ -46,7 +46,7 @@ Manual Testing:
     - Found and removed extra space.
     - Application connected and loaded page.
     
-2. Checked that Flask application worked within Docker.
+2. Checked that basic Flask application worked within Docker.
     - Built containers.
     - Application unable to connect.
     - Checked port for phpMyAdmin - connected.
@@ -70,8 +70,41 @@ Manual Testing:
     - Tried specifying home directory in Dockerfile.
     - Removed and rebuilt containers.
     - Change to error: ~home/home/... 
-    - 
-    - 
+    - Tried a few variations, to th same effect.
+    - Compared file structure in VSCode to file structure of an application made by the class tutor.
+    - Found that the app.py file was in the project folder, but not actually in the application folder.
+    - Moved file.
+    - Removed and rebuilt containers.
+    - Application connected.
+  
+ 3. Became unable to login to phpMyAdmin - Could not connect to MySQL.
+    - Checked no accidental changes to .yml file.
+    - Removed and rebuilt containers.
+    - Unable to login.
+    - Tried changing port reference.
+    - Removed and rebuilt containers.
+    - Unable to login.
+    - Tried changing container and database names.
+    - Removed and rebuilt containers.
+    - Unable to create volume - not declared.
+    - Updated volume declaration section.
+    - Removed and rebuilt containers.
+    - Unable to login.
+    - Removed containers.
+    - Cleared ports.
+    - Rebuilt containers.
+    - Unable to login.
+    - Removed containers.
+    - Returned .yml to original state.
+    - Attempted to rebuild containers - process did not complete in terminal.
+    - Restarted VM.
+    - Attempted to rebuild containers - process did not complete in terminal.
+    - Restarted VM.
+    - Critical memory warning.
+    - Deleted unnecessary folders.
+    - Attempted to rebuild containers - process did not complete in terminal and VM froze.
+    - Attempted to restart VM - process did not complete.
+    - Killed VM in favour of clone. 
     
 
 CI/CD PIPELINE
