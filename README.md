@@ -9,13 +9,14 @@ Design and build a cocktail recipe application, using MySQL to house the relevan
 PLANNING
 
 Please see: https://miro.com/app/board/uXjVOVjcF1A=/?moveToWidget=3458764517249365124&cot=14
-for: 
-User Stories
-User Journey Wireframe
-Risk Assessment 
 
-Component Diagrams for Search Functions
-Application Deployment Diagram
+for: 
+User Stories,
+User Journey Wireframe,
+Risk Assessment,
+Database Relationship Diagram,
+Application Component Diagrams,
+Application Deployment Diagram.
 
 
 UNIT TESTING
@@ -116,17 +117,18 @@ Manual Testing B:
     - Running   $ python -m pytest -v   will instruct the system to test all Test_****.py files and return detailed logs.
     - With module 'pytest-cov', running     $ python -m -pytest --cov=proj      will return the test coverage of the project.
         
- 
-
-CI/CD PIPELINE
-
 
 ______________________________________________________
 
 RETROSPECTIVE COMMENTS
 
 Diversions from project brief:
-The original assessment project brief required the application to be hosted in the cloud using Docker Swarm and to use Jenkins to create a CI/CD pipeline to automate the testing, integration and deployment of new code. However, although Jenkins was introduced, these aspects were not covered during the course.
+The original assessment project brief required the application to be hosted in the cloud using Docker Swarm and to use Jenkins to create a CI/CD pipeline to automate the testing, integration and deployment of new code. However, although Jenkins was introduced, these aspects were not covered during the course. I understand the theory of moving an application through Development, Testing, Staging and Production environments, but am currently uncertain how to demonstrate this pratically.
+
+My original concept has proven to be more than I could handle. I may have been overly ambitious for my current level of understanding and although I did cut out some of the features that I'd wanted to do, I still struggled with time. Some of this was due to taking a very long time to solve some very basic issues, and I can only hope that this will improve with experience.
+
+I have not completed a working application and have not included a video because there is nothing to demonstate.
+
 
 What went well:
 - starting to understand HTML.
