@@ -18,7 +18,66 @@ User Stories & User Journey
 
 
 
+Risk Assessment
 
+
+
+INFRASTRUCTURE
+
+
+COMPONENTS
+
+
+UNIT TESTING
+Test each component part separately to the whole of the application.
+
+Manual Testing:
+1. Checked that Flask application worked by running app.py outside of Docker.
+    - Application was unable to connect.
+    - Checked port was clear.
+    - Application unable to connect.
+    - Checked port reference specified in app.py file.
+    - Tried changing port reference.
+    - Application unable to connect.
+    - Checked syntax of port reference.
+    - Tried changing " to '
+    - Application unable to connect.
+    - Checked syntax.
+    - Found and removed extra space.
+    - Application connected and loaded page.
+    
+2. Checked that Flask application worked within Docker.
+    - Built containers.
+    - Application unable to connect.
+    - Checked port for phpMyAdmin - connected.
+    - Listed containers in terminal - 2 of 3 listed.
+    - webapp container not built.
+    - Checked .yml file for errors - structure and spelling appear correct.
+    - Checked Dockerfile for errors - stucture and spelling appear correct.
+    - Removed containers.
+    - Cleared ports.
+    - Rebuilt containers.
+    - Application unable to connect.
+    - Checked containers - still only 2.
+    - Checked docker logs - COPY failed: file does not exist in build context error.
+    - Checked Dockerfile - checked path of COPY command.
+    - Removed and rebuilt containers.
+    - Application unable to connect.
+    - Scrolled through terminal output - file does not exist error. (cannot remember exact output at time of writing, but had to Google an explanation)
+    - Error = Path error in Dockerfile. But path looks ok...
+    - Visually check directory - ok - correct directory, correct folder.
+    - Considered error may be due to lack of familiarity with Ubuntu file structure.
+    - Tried specifying home directory in Dockerfile.
+    - Removed and rebuilt containers.
+    - Change to error: ~home/home/... 
+    - 
+    - 
+    
+
+CI/CD PIPELINE
+
+
+______________________________________________________
 
 RETROSPECTIVE COMMENTS
 
