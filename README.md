@@ -8,19 +8,14 @@ Design and build a cocktail recipe application, using MySQL to house the relevan
 
 PLANNING
 
-User Stories & User Journey
-
 Please see: https://miro.com/app/board/uXjVOVjcF1A=/?moveToWidget=3458764517249365124&cot=14
 for: 
 User Stories
 User Journey Wireframe
+Risk Assessment 
+
 Component Diagrams for Search Functions
-
-Risk Assessment
-
-
-
-INFRASTRUCTURE
+Application Deployment Diagram
 
 
 UNIT TESTING
@@ -116,6 +111,11 @@ Manual Testing A:
 Manual Testing B:
     - Code template drafted for testing of indivdual HTML pages
     - Code template drafted for testing for an image within a container
+    
+    - Running   $ python -m pytest   will instruct the system to test all test_****.py files
+    - Running   $ python -m pytest -v   will instruct the system to test all Test_****.py files and return detailed logs.
+    - With module 'pytest-cov', running     $ python -m -pytest --cov=proj      will return the test coverage of the project.
+        
  
 
 CI/CD PIPELINE
