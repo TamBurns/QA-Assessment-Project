@@ -11,19 +11,16 @@ PLANNING
 User Stories & User Journey
 
 Please see: https://miro.com/app/board/uXjVOVjcF1A=/?moveToWidget=3458764517249365124&cot=14
-
+for: 
+User Stories
+User Journey Wireframe
+Component Diagrams for Search Functions
 
 Risk Assessment
 
 
 
 INFRASTRUCTURE
-
-
-COMPONENTS
-
-
-
 
 
 UNIT TESTING
