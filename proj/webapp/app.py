@@ -25,13 +25,13 @@ def home():
 
     return render_template("home.html", count = count)
 
-@app.route("/c_search")
-def c_search():
-    return render_template("c_search.html")
+@app.route("/cocktail_search")
+def cocktail_search():
+    return render_template("cocktail_search.html")
 
-@app.route("/s_search")
-def s_search():
-    return render_template("s_search.html")
+@app.route("/spirit_search")
+def spirit_search():
+    return render_template("spirit_search.html")
 
 @app.route("/newcard")
 def newcard():

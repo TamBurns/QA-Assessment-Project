@@ -2,8 +2,9 @@ FROM python:3
 
 WORKDIR /usr/webapp
 
-RUN pip install flask
-RUN pip install flask-mysqldb
+COPY requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
 
 COPY ./webapp/app.py app.py
 
