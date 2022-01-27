@@ -28,10 +28,13 @@ INFRASTRUCTURE
 COMPONENTS
 
 
+
+
+
 UNIT TESTING
 Test each component part separately to the whole of the application.
 
-Manual Testing:
+Manual Testing A:
 1. Checked that basic Flask application worked by running app.py outside of Docker.
     - Application was unable to connect.
     - Checked port was clear.
@@ -104,8 +107,24 @@ Manual Testing:
     - Deleted unnecessary folders.
     - Attempted to rebuild containers - process did not complete in terminal and VM froze.
     - Attempted to restart VM - process did not complete.
+    - Attempted to restart VM - process did not complete.
     - Killed VM in favour of clone. 
-    
+ 
+4. Check that MySQL database connects to Flask application.
+    - Updated app.py file with relevant code (on reflection, this should have been written in a separate file).
+    - Check syntax near 'xxxx' error.
+    - Altered and rerun.
+    - Repeated a few times, then:
+    - Module not found error - cannot find flask-mysqldb
+    - Checked syntax (flask-mysqldb v. flask_mysqldb)
+    - Checked Dockerfile and requirements.
+    - Checked module installed on host (although this should not affect the container).
+    - Issue not yet resolved.
+  
+Manual Testing B:
+    - Code template drafted for testing of indivdual HTML pages
+    - Code template drafted for testing for an image within a container
+ 
 
 CI/CD PIPELINE
 
